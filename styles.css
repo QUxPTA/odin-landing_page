@@ -1,0 +1,117 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container for consistent horizontal padding and max width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Background colors and font styles */
+.header,
+.footer {
+  background-color: #1f2937;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  padding: 60px 0;
+}
+
+/* Layout for Logo + Navigation (top bar) */
+.header nav {
+  display: flex;
+  justify-content: space-between; /* changed from space-around */
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Hero Section Layout (content + image side by side) */
+.header .hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+/* Content styles */
+.hero-content,
+.hero-image {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3882f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #2563eb;
+}
+
+/* Quote Section */
+.quote p:first-of-type {
+  font-size: 36px;
+  font-weight: lighter;
+  color: #1f2937;
+  font-style: italic;
+}

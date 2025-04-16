@@ -4,29 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div>Header Logo</div>
-        <ul>
-          <li><a href="#">Link One</a></li>
-          <li><a href="#">Link Two</a></li>
-          <li><a href="#">Link Three</a></li>
-        </ul>
-      </nav>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <h1>TOP is awesome!</h1>
-        <p>
-          Practicing coding on The Odin Project, while learning is quite fun and
-          hands-on
-        </p>
-        <button>Sign up</button>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <div class="logo">The Odin Project</div>
+          <ul class="nav-links">
+            <li>
+              <a
+                href="https://www.theodinproject.com/paths/foundations/courses/foundations"
+                target="_blank"
+                >Foundations</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails"
+                target="_blank"
+                >Full Stack Ruby on Rails</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.theodinproject.com/paths/full-stack-javascript"
+                target="_blank"
+                >Full Stack JavaScript</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1>The Odin Project is awesome!</h1>
+            <p>
+              Practicing coding on The Odin Project, while learning is quite fun
+              and hands-on
+            </p>
+            <a href="https://www.theodinproject.com/sign_up" target="_blank"
+              ><button>Sign up</button></a
+            >
+          </div>
+          <div class="hero-image">
+            <img src="./images/odin_project.webp" alt="Hero image" />
+          </div>
+        </div>
       </div>
     </header>
+
     <main>
       <div>
         <h2>What to Expect</h2>
@@ -41,7 +71,7 @@
           <p>Node.js</p>
         </div>
       </div>
-      <div>
+      <div class="quote">
         <p>
           TOP is quite an experience. So far I've built one project and gone
           deep into foundational concepts. I'm looking forward to more
@@ -54,7 +84,7 @@
         <button>Sign up</button>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div>
         <p>Copyright © The Odin Project 2025</p>
       </div>
