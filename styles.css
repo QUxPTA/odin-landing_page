@@ -43,6 +43,14 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
 /* Logo */
 .logo {
   font-size: 24px;
@@ -77,10 +85,25 @@ body {
   gap: 40px;
 }
 
+@media (max-width: 768px) {
+  .header .hero-section {
+    flex-direction: column;
+  }
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
 /* Content styles */
 .hero-content,
 .hero-image {
   flex: 1;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-content h1 {
@@ -116,6 +139,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 5rem 0;
+  gap: 40px;
 }
 
 .info-item {
@@ -221,6 +245,52 @@ body {
 
 .cta-content button:hover {
   background-color: #2563eb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-container {
+    margin: 80px 20px;
+  }
+  .cta-content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 32px;
+    gap: 20px;
+  }
+  .cta-content h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .cta-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .cta-content button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-container {
+    margin: 40px 10px;
+  }
+  .cta-content {
+    padding: 16px 20px;
+    gap: 16px;
+  }
+  .cta-content h2 {
+    font-size: 18px;
+  }
+  .cta-content p {
+    font-size: 12px;
+  }
+  .cta-content button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 /* Footer */
